@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lev2_2 domElements</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <form id="form1" onsubmit="return false">
+                <label for="vorname">Vorname</label>
+                <input onsubmit="vorname()" type="text" id="vorname" name="vorname" placeholder="Dein Vorname...">
+                <label for="nachname">Nachname</label>
+                <input type="text" id="nachname" name="nachname" placeholder="Dein Nachname...">
+                <label for="land">Land</label>
+                <select id="land" name="land">
+                    <option value="Australien">Australia</option>
+                    <option value="Kanada">Canada</option>
+                    <option value="den Vereinigten Staaten von Amerika">USA</option>
+                </select>
+                <input type="submit" value="Submit" onclick="submitInfo()">
+            </form>
+        </div>
+        
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
